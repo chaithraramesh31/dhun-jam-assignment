@@ -10,8 +10,9 @@ const Dashboard = () => {
     const userDetails = useSelector((state) => state.admin.adminData);
 
     const dispatch = useDispatch()
-      useEffect(()=>{
-            dispatch(adminDetails(userId)) 
+    useEffect(()=>{
+        dispatch(adminDetails(userId)) 
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
     const [chargeCustomers, setChargeCustomers] = useState(0);

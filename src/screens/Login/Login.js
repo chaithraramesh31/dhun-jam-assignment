@@ -27,7 +27,7 @@ const Login = () => {
         <div className='input-box'>
             <input className='input-field' type='text' placeholder='Password' required
             value={password} onChange={(e) => setPassword(e.target.value)}/>
-            <img className='eyeImg' src={eyeOpen} />
+            <img className='eyeImg' src={eyeOpen} alt='eye'/>
         </div>
         <input type='submit' value='Sign in' className='btn'/>
         <p>New Registration ?</p>

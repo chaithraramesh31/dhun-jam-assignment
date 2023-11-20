@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './graph.css';
 
 const Graph = ({custom, category1, category2, category3, category4}) => {
