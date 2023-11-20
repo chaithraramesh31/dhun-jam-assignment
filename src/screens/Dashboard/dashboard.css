@@ -1,0 +1,69 @@
+.dashboard-conatiner {
+    width: 600px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fields-container {
+    width: 100%;
+}
+
+.field-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.field-box p {
+    width: 50%;
+}
+
+.field-box div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+label{
+    display: block;
+}
+
+label span {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+}
+
+label span::before {
+    content: '';
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+input[type='radio']:checked + span::before {
+    background-color: #6741D9;
+    box-shadow: inset 0 0 0 3px #FFFFFF;
+}
+
+.login-input {
+    text-align: center;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
