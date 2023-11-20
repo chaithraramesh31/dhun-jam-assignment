@@ -1,6 +1,5 @@
-.dashboard-conatiner {
+.dashboard-container {
     width: 600px;
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +35,7 @@ input[type='radio'] {
 
 label{
     display: block;
+    cursor: pointer;
 }
 
 label span {
@@ -66,4 +66,21 @@ input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+@media(max-width:700px){
+    .dashboard-container {
+        width: 100%;
+    }
+    .field-box {
+        flex-direction: column;
+    }
+    .field-box p {
+        width: 100%;
+        /* text-align: center; */
+    }
+    
+    .field-box div {
+        width: 100%;
+    }
 }
